@@ -104,7 +104,7 @@ static const char *board_soc_type(uint32_t board_rev)
 static int cores_count(uint32_t board_rev)
 {
     static const int soc_cores_count[] = {
-        NULL, BCM283X_NCPUS, BCM283X_NCPUS, 1
+        0, BCM283X_NCPUS, BCM283X_NCPUS, BCM2835_NCPUS
     };
     int proc_id = board_processor_id(board_rev);
 

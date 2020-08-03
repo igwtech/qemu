@@ -30,13 +30,13 @@ static const BCM283XInfo bcm283x_socs[] = {
     {
         .name = TYPE_BCM2835,
         .cpu_type = ARM_CPU_TYPE_NAME("arm1176"),
-        .core_count = 1,
+        .core_count = BCM2835_NCPUS,
         .peri_base = 0x20000000,
     },
     {
         .name = TYPE_BCM2836,
         .cpu_type = ARM_CPU_TYPE_NAME("cortex-a7"),
-	    .core_count = 4,
+	    .core_count = BCM283X_NCPUS,
         .peri_base = 0x3f000000,
         .ctrl_base = 0x40000000,
         .clusterid = 0xf,
@@ -45,7 +45,7 @@ static const BCM283XInfo bcm283x_socs[] = {
     {
         .name = TYPE_BCM2837,
         .cpu_type = ARM_CPU_TYPE_NAME("cortex-a53"),
-	.core_count = 4,
+	    .core_count = BCM283X_NCPUS,
         .peri_base = 0x3f000000,
         .ctrl_base = 0x40000000,
         .clusterid = 0x0,

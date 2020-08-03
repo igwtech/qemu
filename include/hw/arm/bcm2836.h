@@ -19,6 +19,7 @@
 #define TYPE_BCM283X "bcm283x"
 #define BCM283X(obj) OBJECT_CHECK(BCM283XState, (obj), TYPE_BCM283X)
 
+#define BCM2835_NCPUS 1
 #define BCM283X_NCPUS 4
 
 /* These type names are for specific SoCs; other than instantiating
